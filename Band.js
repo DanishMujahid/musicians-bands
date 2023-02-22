@@ -5,7 +5,8 @@ const {Sequelize, sequelize} = require('./db');
 const Band = sequelize.define('Band', {
     name: Sequelize.STRING,
     genre: Sequelize.STRING,
-    bandMembers: Sequelize.INTEGER
+    bandMembers: Sequelize.INTEGER,
+    showCount: Sequelize.INTEGER
     });
 
 module.exports = {
